@@ -3,19 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQSample", "RabbitMQSample", "{DA40BBAF-9319-42D5-9B7C-7105C5B5E4A1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadBalancing", "LoadBalancing", "{E4B2C10A-B476-4256-A316-9AF75ED14486}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PubSub", "PubSub", "{450E2B7B-E586-451F-A021-0286CFBB6935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMq.LoadBalancing.Reciver", "LoadBlancing\RabbitMq.LoadBalancing.Reciver\RabbitMq.LoadBalancing.Reciver.csproj", "{070ED9D4-EA7B-48FD-9810-37E2E675FC1D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadBalancing", "LoadBalancing", "{AD00BB18-BA97-4C81-9B62-74E3551BF5CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMq.LoadBalancing.Sender", "LoadBlancing\RabbitMq.LoadBalancing.Sender\RabbitMq.LoadBalancing.Sender.csproj", "{F580CA2B-6D48-4F3B-B72A-2672348590D2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DirectRouting", "DirectRouting", "{F0D6753D-D73B-4ACB-B012-188944FB3882}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQSample", "RabbitMQSample", "{C095D14F-4CFF-4EC8-B1B3-917B4D90826D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopicRouting", "TopicRouting", "{C44876B8-061A-4093-8D24-65CA0D62692A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Reciver", "RabbitMQSample\RabbitMQ.Reciver\RabbitMQ.Reciver.csproj", "{53B7485A-701E-4FE8-86AF-7433F16D6E03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Sender", "..\..\..\RabbitMQ\RabbitMQSample\RabbitMQ.Sender\RabbitMQ.Sender.csproj", "{5DE93A3A-6CD0-4A28-A2CE-D09D244C67AB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Reciver", "RabbitMQ.Reciver\RabbitMQ.Reciver.csproj", "{4324420C-ECBE-4964-BD83-3F3B3E2DD010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Sender", "RabbitMQSample\RabbitMQ.Sender\RabbitMQ.Sender.csproj", "{0517C939-78D4-451D-A22C-FDC0AC9E772D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,21 +21,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5DE93A3A-6CD0-4A28-A2CE-D09D244C67AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DE93A3A-6CD0-4A28-A2CE-D09D244C67AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DE93A3A-6CD0-4A28-A2CE-D09D244C67AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DE93A3A-6CD0-4A28-A2CE-D09D244C67AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4324420C-ECBE-4964-BD83-3F3B3E2DD010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4324420C-ECBE-4964-BD83-3F3B3E2DD010}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4324420C-ECBE-4964-BD83-3F3B3E2DD010}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4324420C-ECBE-4964-BD83-3F3B3E2DD010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070ED9D4-EA7B-48FD-9810-37E2E675FC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070ED9D4-EA7B-48FD-9810-37E2E675FC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070ED9D4-EA7B-48FD-9810-37E2E675FC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070ED9D4-EA7B-48FD-9810-37E2E675FC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F580CA2B-6D48-4F3B-B72A-2672348590D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F580CA2B-6D48-4F3B-B72A-2672348590D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F580CA2B-6D48-4F3B-B72A-2672348590D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F580CA2B-6D48-4F3B-B72A-2672348590D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B7485A-701E-4FE8-86AF-7433F16D6E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B7485A-701E-4FE8-86AF-7433F16D6E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B7485A-701E-4FE8-86AF-7433F16D6E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B7485A-701E-4FE8-86AF-7433F16D6E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0517C939-78D4-451D-A22C-FDC0AC9E772D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0517C939-78D4-451D-A22C-FDC0AC9E772D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0517C939-78D4-451D-A22C-FDC0AC9E772D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0517C939-78D4-451D-A22C-FDC0AC9E772D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5DE93A3A-6CD0-4A28-A2CE-D09D244C67AB} = {DA40BBAF-9319-42D5-9B7C-7105C5B5E4A1}
-		{4324420C-ECBE-4964-BD83-3F3B3E2DD010} = {DA40BBAF-9319-42D5-9B7C-7105C5B5E4A1}
+		{070ED9D4-EA7B-48FD-9810-37E2E675FC1D} = {E4B2C10A-B476-4256-A316-9AF75ED14486}
+		{F580CA2B-6D48-4F3B-B72A-2672348590D2} = {E4B2C10A-B476-4256-A316-9AF75ED14486}
+		{53B7485A-701E-4FE8-86AF-7433F16D6E03} = {C095D14F-4CFF-4EC8-B1B3-917B4D90826D}
+		{0517C939-78D4-451D-A22C-FDC0AC9E772D} = {C095D14F-4CFF-4EC8-B1B3-917B4D90826D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6CA37AB8-40D7-42EE-BE23-34CF1D29DF7B}
