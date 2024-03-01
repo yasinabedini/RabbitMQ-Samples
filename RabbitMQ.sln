@@ -15,6 +15,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Reciver", "RabbitM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Sender", "RabbitMQSample\RabbitMQ.Sender\RabbitMQ.Sender.csproj", "{0517C939-78D4-451D-A22C-FDC0AC9E772D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DirectRouting", "DirectRouting", "{999EA972-1742-45C8-B55A-76DAA42B78CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectRouting.Sender", "DirectRouting\DirectRouting.Sender\DirectRouting.Sender.csproj", "{C47EBB81-294F-49E7-AB0A-B3431CD6CEAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectRouting.Reciver.Email", "DirectRouting\DirectRouting.Reciver.Email\DirectRouting.Reciver.Email.csproj", "{0CD19AF6-716A-4D9E-9755-83EC25A6F723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectRouting.Reciver.Sms", "DirectRouting\DirectRouting.Reciver.Sms\DirectRouting.Reciver.Sms.csproj", "{CBCA745E-5B22-49AA-9396-10252B4E92A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectRouting.Reciver.Logger", "DirectRouting\DirectRouting.Reciver.Logger\DirectRouting.Reciver.Logger.csproj", "{EF30BE1D-1D24-4032-80D4-F850B2EE04A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +47,22 @@ Global
 		{0517C939-78D4-451D-A22C-FDC0AC9E772D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0517C939-78D4-451D-A22C-FDC0AC9E772D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0517C939-78D4-451D-A22C-FDC0AC9E772D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C47EBB81-294F-49E7-AB0A-B3431CD6CEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47EBB81-294F-49E7-AB0A-B3431CD6CEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47EBB81-294F-49E7-AB0A-B3431CD6CEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47EBB81-294F-49E7-AB0A-B3431CD6CEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD19AF6-716A-4D9E-9755-83EC25A6F723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD19AF6-716A-4D9E-9755-83EC25A6F723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD19AF6-716A-4D9E-9755-83EC25A6F723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD19AF6-716A-4D9E-9755-83EC25A6F723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCA745E-5B22-49AA-9396-10252B4E92A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCA745E-5B22-49AA-9396-10252B4E92A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCA745E-5B22-49AA-9396-10252B4E92A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCA745E-5B22-49AA-9396-10252B4E92A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF30BE1D-1D24-4032-80D4-F850B2EE04A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF30BE1D-1D24-4032-80D4-F850B2EE04A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF30BE1D-1D24-4032-80D4-F850B2EE04A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF30BE1D-1D24-4032-80D4-F850B2EE04A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +72,10 @@ Global
 		{F580CA2B-6D48-4F3B-B72A-2672348590D2} = {E4B2C10A-B476-4256-A316-9AF75ED14486}
 		{53B7485A-701E-4FE8-86AF-7433F16D6E03} = {C095D14F-4CFF-4EC8-B1B3-917B4D90826D}
 		{0517C939-78D4-451D-A22C-FDC0AC9E772D} = {C095D14F-4CFF-4EC8-B1B3-917B4D90826D}
+		{C47EBB81-294F-49E7-AB0A-B3431CD6CEAE} = {999EA972-1742-45C8-B55A-76DAA42B78CB}
+		{0CD19AF6-716A-4D9E-9755-83EC25A6F723} = {999EA972-1742-45C8-B55A-76DAA42B78CB}
+		{CBCA745E-5B22-49AA-9396-10252B4E92A4} = {999EA972-1742-45C8-B55A-76DAA42B78CB}
+		{EF30BE1D-1D24-4032-80D4-F850B2EE04A2} = {999EA972-1742-45C8-B55A-76DAA42B78CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6CA37AB8-40D7-42EE-BE23-34CF1D29DF7B}
